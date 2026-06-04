@@ -1,42 +1,42 @@
 const workshops = [
   {
     emoji: '🍫',
-    title: 'סדנת טראפלס',
-    subtitle: 'Truffles Workshop',
+    title: 'סדנת פרלינים',
+    subtitle: 'Pralines Workshop',
     description:
-      'צרו טראפלים עשירים ומפתים עם מגוון ציפויים וגנאשים. מתאים לכל רמה, יוצאת עם קופסת מתנה מלאה.',
+      'צרו פרלינים מושלמים מאפס — ציפויי שוקולד, גנאשים עשירים ומילויים מגוונים. תצאו עם קופסת מתנה שעשיתן בידיים שלכן.',
     duration: '~2.5 שעות',
-    participants: 'עד 8 משתתפות',
+    participants: 'קבוצה קטנה',
     highlight: true,
   },
   {
-    emoji: '🍬',
-    title: 'סדנת בונבונים',
-    subtitle: 'Bonbons Workshop',
+    emoji: '🍹',
+    title: 'סדנת קוקטיילים ושוקולד',
+    subtitle: 'Cocktails & Chocolate',
     description:
-      'עולם הבונבונים המדויקים — ציפוי שוקולד, מילויים מגוונים ועיצוב בסגנון פטיסרי צרפתי. חוויה מדיטטיבית ומפנקת.',
-    duration: '~3 שעות',
-    participants: 'עד 6 משתתפות',
+      'שילוב מנצח — שוקולד וקוקטיילים. תכינו יחד קוקטיילים מיוחדים ופרלינים תואמים, לחוויה חושית שלא תשכחו.',
+    duration: '~2.5 שעות',
+    participants: 'קבוצה קטנה',
     highlight: false,
   },
   {
-    emoji: '🍫',
-    title: 'סדנת טבליות',
-    subtitle: 'Chocolate Tablets',
+    emoji: '👯',
+    title: 'ערב צוות / חברות',
+    subtitle: 'Team Building & Girls Night',
     description:
-      'עצבו טבליות שוקולד ייחודיות עם פירות, אגוזים, עשבי תיבול ופרחים אכילים. כל טבלה — יצירה אחרת.',
-    duration: '~2 שעות',
-    participants: 'עד 10 משתתפות',
-    highlight: false,
-  },
-  {
-    emoji: '🎁',
-    title: 'ערב גיבשושית / bachelorette',
-    subtitle: 'Girls Night',
-    description:
-      'חבילה מיוחדת לאירועים פרטיים — ערבי רווקות, ימי הולדת, ומפגשי חברות. מותאם אישית לפי הרצון.',
+      'סדנה מגבשת לצוותים, ערבי רווקות, ימי הולדת ומפגשי חברות. מותאמת אישית לקבוצה שלכן — מגיעות ועוזבות עם חיוך.',
     duration: 'לפי בחירה',
-    participants: 'עד 12 משתתפות',
+    participants: 'עד 15 משתתפות',
+    highlight: false,
+  },
+  {
+    emoji: '💑',
+    title: 'סדנה לזוגות',
+    subtitle: 'Couples Workshop',
+    description:
+      'דייט אחר. תכינו יחד פרלינים ותגלו מה קורה כששניים יוצרים שוקולד ביחד. כיף, מתוק, ובלתי נשכח.',
+    duration: '~2 שעות',
+    participants: 'לזוגות',
     highlight: false,
   },
 ]
@@ -48,14 +48,14 @@ export default function Workshops() {
         {/* Section header */}
         <div className="text-center mb-16">
           <p className="font-assistant text-choco-400 tracking-[0.35em] text-xs uppercase mb-3">
-            ✦ &nbsp; מה עושים אצלנו &nbsp; ✦
+            ✦ &nbsp; מה תוכלו למצוא &nbsp; ✦
           </p>
-          <h2 className="section-heading text-choco-50">הסדנאות שלנו</h2>
+          <h2 className="section-heading text-choco-50">הסדנאות</h2>
           <div className="ornament-divider max-w-sm mx-auto mt-4">
             <span className="text-choco-400 text-base">❧</span>
           </div>
           <p className="font-assistant text-choco-300 mt-4 text-base max-w-xl mx-auto">
-            כל סדנה היא חוויה מלאה — תבואי עם סקרנות ותצאי עם מיומנות וגאווה.
+            בואו לחוות יחד את הקסם בסדנת שוקולד ייחודית ומלאת הנאה
           </p>
         </div>
 

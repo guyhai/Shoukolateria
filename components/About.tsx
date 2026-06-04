@@ -7,7 +7,7 @@ export default function About() {
           <p className="font-assistant text-choco-400 tracking-[0.35em] text-xs uppercase mb-3">
             ✦ &nbsp; הסיפור שלנו &nbsp; ✦
           </p>
-          <h2 className="section-heading text-choco-900">על השוקולדריה</h2>
+          <h2 className="section-heading text-choco-900">קצת עליי</h2>
           <div className="ornament-divider max-w-sm mx-auto mt-4">
             <span className="text-choco-400 text-base">❧</span>
           </div>
@@ -29,32 +29,37 @@ export default function About() {
             </div>
           </div>
 
-          {/* Text */}
+          {/* Text — verbatim from the original site + enriched */}
           <div className="order-1 md:order-2 space-y-6">
             <h3 className="font-playfair text-3xl text-choco-800 leading-snug">
-              המקום שבו שוקולד הופך לאמנות
+              קוראים לי רומי 🍫
             </h3>
 
             <p className="font-assistant text-choco-700 text-base leading-relaxed">
-              השוקולדריה נולדה מתוך אהבה עמוקה לשוקולד ולאמנות היצירה.
-              בלב שכונת לווינסקי הצבעונית — שוק הספרים, הבשמים והטעמים — פתחנו
-              את הדלתות לסדנאות שוקולד אינטימיות ומרגשות.
+              הקמתי את השוקולדיה מתוך אהבה גדולה לשוקולד, ליצירתיות ולאנשים.
+              אני מזמינה אתכם אליי הביתה, לחוויה מחברת ומלאת טעמים.
             </p>
 
             <p className="font-assistant text-choco-700 text-base leading-relaxed">
-              כל סדנה היא מסע חושי: ריחות קקאו, מרקמים שנמסים בין האצבעות,
-              וסוד קטן שלוקחים הביתה — טראפלים, טבליות, ובונבונים שעשיתן
-              בידיים שלכן.
+              סדנת שוקולד של השוקולדיה מתאימה לערבי צוות מגבשים, לזוגות מגניבים,
+              לקבוצות חברים שבאמת אוהבים, אירועים ועוד.
+              בואו לחוות יחד את הקסם בסדנת שוקולד ייחודית ומלאת הנאה.
             </p>
 
-            <p className="font-assistant text-choco-700 text-base leading-relaxed">
-              הסדנאות מתקיימות בבית, בקבוצות קטנות ומפנקות,
-              כי האמנו שחוויה אמיתית נולדת מהקרבה.
-            </p>
+            {/* Google rating badge */}
+            <div className="inline-flex items-center gap-3 bg-white border-2 border-choco-200 px-5 py-3 shadow-sm">
+              <svg className="w-5 h-5 text-yellow-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+              <div>
+                <p className="font-assistant font-bold text-choco-900 text-lg leading-none">5.0</p>
+                <p className="font-assistant text-choco-500 text-xs">Google Rating</p>
+              </div>
+            </div>
 
             {/* Feature pills */}
             <div className="flex flex-wrap gap-3 pt-2">
-              {['קבוצות קטנות', 'חומרי גלם איכותיים', 'ליד שוק לווינסקי', 'לכל רמות ההכרה'].map(
+              {['אצל רומי בבית', 'השוק 34 תל אביב', 'קבוצות קטנות', 'פרלינים וקוקטיילים'].map(
                 (tag) => (
                   <span
                     key={tag}

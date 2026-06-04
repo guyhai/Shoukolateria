@@ -31,10 +31,10 @@ export default function Header() {
         {/* Logo */}
         <a href="#" className="flex flex-col items-center leading-none group">
           <span className="font-playfair text-choco-400 text-2xl md:text-3xl tracking-wide group-hover:text-choco-300 transition-colors">
-            שוקולדריה
+            השוקולדיה
           </span>
           <span className="font-assistant text-choco-200 text-xs tracking-[0.25em] uppercase">
-            Shoukoladria
+            Ha-Shukoldaya
           </span>
         </a>
 

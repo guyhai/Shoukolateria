@@ -26,28 +26,28 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 py-24 max-w-3xl mx-auto">
         {/* Pre-title */}
         <p className="font-assistant text-choco-400 tracking-[0.4em] text-xs uppercase mb-6">
-          ✦ &nbsp; חוויית שוקולד אומנותית &nbsp; ✦
+          ✦ &nbsp; סדנאות פרלינים וקוקטיילים &nbsp; ✦
         </p>
 
         {/* Vintage frame around main heading */}
         <div className="vintage-frame p-8 md:p-12 mb-10 bg-choco-950/40">
           <h1 className="font-playfair text-5xl md:text-7xl lg:text-8xl text-choco-50 leading-none mb-4">
-            שוקולדריה
+            הַשּׁוּקוֹלְדָיָה
           </h1>
           <div className="ornament-divider mx-auto max-w-xs">
             <span className="text-choco-400 text-lg">✦</span>
           </div>
           <p className="font-playfair italic text-choco-300 text-xl md:text-2xl mt-4">
-            Shoukoladria
+            Ha-Shukoldaya
           </p>
         </div>
 
         {/* Tagline */}
         <p className="font-assistant text-choco-100 text-lg md:text-xl leading-relaxed mb-2">
-          סדנאות שוקולד אומנותיות בלב תל אביב
+          אצל רומי, בבית, ליד שוק לווינסקי
         </p>
         <p className="font-assistant text-choco-300 text-base mb-10">
-          ליד שוק לווינסקי האגדי &nbsp;·&nbsp; קבוצות קטנות &nbsp;·&nbsp; חוויה בלתי נשכחת
+          השוק 34, תל אביב &nbsp;·&nbsp; קבוצות קטנות &nbsp;·&nbsp; ⭐ 5.0 Google
         </p>
 
         {/* CTA buttons */}

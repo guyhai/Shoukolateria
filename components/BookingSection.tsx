@@ -64,7 +64,7 @@ export default function BookingSection() {
             <span className="text-choco-400 text-base">❧</span>
           </div>
           <p className="font-assistant text-choco-600 mt-4 text-sm leading-relaxed">
-            השאירי פרטים ונחזור אליך לאישור ולתיאום התשלום.
+            השאירי פרטים ורומי תחזור אליך לאישור ולתיאום התשלום.
           </p>
         </div>
 
