@@ -1,7 +1,10 @@
-# Temporary viability spike for the Nevo class-actions scraper.
-# Answers one question: can a GitHub-hosted runner fetch nevo.co.il, or is there an
-# IP/bot block? Removed once the answer is recorded and the work moves to its own repo.
-name: nevo-spike
+# Temporary source-selection spike for the class-actions tool.
+#
+# Round 1 established that a runner can fetch Nevo, but Nevo's robots.txt disallows
+# automated access. Round 2 evaluates the courts' official public register and the
+# open-data publications of the same record, preferring structured data over scraping.
+# Removed once a source is chosen and the work moves to its own repo.
+name: source-spike
 
 on:
   push:
@@ -25,17 +28,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Probe Nevo over plain HTTP
-        id: plain
-        continue-on-error: true
-        run: python3 spike/probe.py
-
-      - name: Retry through a real browser if plain HTTP was blocked
-        if: steps.plain.outcome == 'failure'
-        run: |
-          pip install playwright
-          playwright install --with-deps chromium
-          python3 spike/probe_browser.py
+      - name: Probe court register and open-data sources
+        run: python3 spike/probe_sources.py
 
       - name: Upload captured HTML
         if: always()
