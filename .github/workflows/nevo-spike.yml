@@ -1,0 +1,46 @@
+# Temporary viability spike for the Nevo class-actions scraper.
+# Answers one question: can a GitHub-hosted runner fetch nevo.co.il, or is there an
+# IP/bot block? Removed once the answer is recorded and the work moves to its own repo.
+name: nevo-spike
+
+on:
+  push:
+    branches: [claude/nevo-class-actions-scraper-qpi8m2]
+    paths:
+      - 'spike/**'
+      - '.github/workflows/nevo-spike.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Probe Nevo over plain HTTP
+        id: plain
+        continue-on-error: true
+        run: python3 spike/probe.py
+
+      - name: Retry through a real browser if plain HTTP was blocked
+        if: steps.plain.outcome == 'failure'
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+          python3 spike/probe_browser.py
+
+      - name: Upload captured HTML
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: nevo-html
+          path: out/
+          if-no-files-found: warn
